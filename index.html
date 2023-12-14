@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Generator</title>
+    <link rel="stylesheet" href="/css/username_generator.css">
+    <link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="text-center mb-4 mt-4 border rounded-2 py-5 px-5">
+            <h1 class="fs-7" id="usernameOutput" aria-label="username@oshine2023"></h1>
+        </div>
+
+        <div class="row mt-5 px-4 justify-content-center">
+            <div class="container-fluid">    
+                <div class="input-group-sm d-flex">
+                    <div class="col-sm-6 px-4">
+                        <label for="firstName">Insert first Name:</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Insert your firstname" required>
+                            
+                        <label for="current-year">Current year</label>
+                        <input type="text" class="form-control" id="currentYear" placeholder="e.g 2018" required>
+                    </div>
+                        
+                    <div class="col-sm-6 px-4">
+                        <label for="firstName">Insert last Name:</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Insert your lastname" required>
+
+                        <label for="Insert your province: ">Insert province:</label>
+                        <input type="text" class="form-control" id="province" placeholder="Insert your province" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="justify-content-center py-4 ms-4 px-4">
+                <button class="btn btn-primary" id="btnGenerate">Generate</button>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="/js/username_generator.js"></script>
+    <!-- <script src="/assets/@popperjs/core/dist/cjs/popper.js"></script> -->
+</body>
+</html>
